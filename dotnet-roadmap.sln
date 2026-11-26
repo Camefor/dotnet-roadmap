@@ -132,6 +132,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Advanced", "Advanced", "{30
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncSnapshotPipelineDemo", "Advanced\AsyncSnapshotPipelineDemo\AsyncSnapshotPipelineDemo.csproj", "{F2A48F16-3571-B41A-2B79-9AFA2EADDA58}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FramingLib", "Advanced\TcpFramingAndConcurrentSendDemo\FramingLib\FramingLib.csproj", "{456D8074-9883-4B08-80AB-F187BD285F67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender", "Advanced\TcpFramingAndConcurrentSendDemo\Sender\Sender.csproj", "{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receiver", "Advanced\TcpFramingAndConcurrentSendDemo\Receiver\Receiver.csproj", "{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StickyPacketDemo", "Advanced\TcpFramingAndConcurrentSendDemo\StickyPacketDemo\StickyPacketDemo.csproj", "{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TcpFramingAndConcurrentSendDemo", "TcpFramingAndConcurrentSendDemo", "{1A65087A-5EF4-4A18-8ACF-FF160D52C875}"
+	ProjectSection(SolutionItems) = preProject
+		Advanced\TcpFramingAndConcurrentSendDemo\README.md = Advanced\TcpFramingAndConcurrentSendDemo\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -278,6 +291,22 @@ Global
 		{F2A48F16-3571-B41A-2B79-9AFA2EADDA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2A48F16-3571-B41A-2B79-9AFA2EADDA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2A48F16-3571-B41A-2B79-9AFA2EADDA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456D8074-9883-4B08-80AB-F187BD285F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456D8074-9883-4B08-80AB-F187BD285F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456D8074-9883-4B08-80AB-F187BD285F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456D8074-9883-4B08-80AB-F187BD285F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -339,6 +368,11 @@ Global
 		{820C71D8-FBC5-4ED9-A959-77D66600864D} = {7CA38616-C4D9-4B40-8A01-AE30F3E93E58}
 		{09E2D931-B5B8-4EA2-9AAF-1B5FA0E9252B} = {7CA38616-C4D9-4B40-8A01-AE30F3E93E58}
 		{F2A48F16-3571-B41A-2B79-9AFA2EADDA58} = {30B8BAB7-AA37-4A25-AEB4-473E6E7B9E2D}
+		{456D8074-9883-4B08-80AB-F187BD285F67} = {1A65087A-5EF4-4A18-8ACF-FF160D52C875}
+		{1B2D1C4B-2E93-4CF1-9534-B6E5B14CF8B8} = {1A65087A-5EF4-4A18-8ACF-FF160D52C875}
+		{3CC8EC3C-FA2E-4BB8-B56C-56B60DD5B79B} = {1A65087A-5EF4-4A18-8ACF-FF160D52C875}
+		{8F3A1D62-55C7-4E09-9B41-7D2E6A0C4F18} = {1A65087A-5EF4-4A18-8ACF-FF160D52C875}
+		{1A65087A-5EF4-4A18-8ACF-FF160D52C875} = {30B8BAB7-AA37-4A25-AEB4-473E6E7B9E2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {434CCC68-8427-4BB7-9841-FA5DC0669DB4}
